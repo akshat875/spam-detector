@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+<h3> Machine learning is a tool that allows systems the ability to learn and improve automatically based upon experience. Machine learning does not need specific programming to carry out an activity. Machine learning  is the development of computer programs that can access data, and through a series of algorithms use the data to learn for itself what action should be taken based on that data.</h3>
+  <div class="outer-container">
+    <!-- scrolling box-->
+    <div class="scrolling_box" >
+      <p id="one">SMS_Spam_Checker</p>
+      <p id="sms_img"><img src="{{ url_for('static', filename='sms_spam.png') }}" alt=""></p>
+      <p id="two">" This web application is created for check messages that was provide to us is spam or not.
+        For checking messages is spam or not click on home page to this sign button.Then put the message inside the 
+        message box then click on the predict button, soon you will get your ans on the screen. After checking how 
+        how many data are spam you click on the navbar's ham or spam button, you will get an table of spam and ham message
+        table. "
+         </p>
+    </div>
+    <!-- go to check page-->
+    <div class="check_page">
+      <div id="box1">
+        <p> Check your message by <br> clicking  this arrow sign button. <br> Directly go to Spam_Checker <br> page.</p>
+      
+      </div>
+      <div id="box2"><a href="{{ url_for ('check')}}"><img src="{{ url_for('static', filename='sign.jpg') }}" alt="check"></a></div>
+    </div>
+    
+  </div>
+{% endblock content %}

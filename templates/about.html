@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+  <p>  this is {{ title }} page ! </p>
+  <h1>This is wonderfull WEB-APP for check any message is spam or not <br>
+  In this WEB-APP using Machine-Learning Algorithm for recognize which message is spam.
+ </h1>
+ <h2>THANK YOU ! use this App</h2>
+
+ <div>
+  <ul class="connection">
+    <div class="logo"><a href="#"><img src="{{ url_for('static', filename='insta.jpg') }}" alt="Instagram">Follow me on <br> Instagram</a></div>
+    <div class="logo"><a href="#"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn">Follow me on <br> LinkedIn</a></div>
+    <div class="logo"><a href="#"><img src="{{ url_for('static', filename='github.png') }}" alt="Github">Follow me on <br> Github</a></div>
+  </ul>
+ </div>
+{% endblock content %}

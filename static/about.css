@@ -1,0 +1,15 @@
+ ul{
+
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.logo img{
+    width: 70px;
+    padding: 20%;
+    border-radius: 50%;
+}
+.logo a{
+    color: aliceblue;
+}
